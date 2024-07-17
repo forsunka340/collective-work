@@ -1,10 +1,13 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Search Service</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,10 +15,10 @@
     <header class="header">
         <nav>
             <ul>
-                <li><a href="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg">Home</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://6698283297565236dfdf0844--dreamy-fairy-f4a331.netlify.app/">Home</a></li>
+                <li><a href="https://6698248f9a602734bfde78ca--candid-lily-155946.netlify.app/">Jobs</a></li>
+                <li><a href="https://66982cb7c61fe93bd8cf8a48--incredible-faun-4d23ba.netlify.app/">About</a></li>
+                <li><a href="https://669829c0c61fe93767cf8ca8--nimble-cuchufli-4f9632.netlify.app/">Contact</a></li>
             </ul>
         </nav>
         <h1>Job Search Service</h1>
@@ -68,9 +71,9 @@
     </section>
 
     <footer class="footer">
+        &copy; All rights reserved 2024
     </footer>
     <script src="script.js"></script>
+</body>
 
-
-
-</body></html>
+</html>
