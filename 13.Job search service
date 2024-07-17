@@ -1,4 +1,4 @@
-css
+CSS
 
 * {
     box-sizing: border-box;
@@ -233,37 +233,3 @@ button {
     border-color: #007BFF;
 }
 
-java script
-
-const jobs = [
-    { title: "Software Engineer", company: "Tech Corp", location: "New York, NY" },
-    { title: "Web Developer", company: "Web Solutions", location: "San Francisco, CA" },
-    { title: "Data Scientist", company: "Data Insights", location: "Boston, MA" },
-    // Add more jobs as needed
-];
-
-function searchJobs() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase();
-    const results = document.getElementById('results');
-    results.innerHTML = '';
-
-    const filteredJobs = jobs.filter(job => 
-        job.title.toLowerCase().includes(searchInput) || 
-        job.company.toLowerCase().includes(searchInput)
-    );
-
-    if (filteredJobs.length > 0) {
-        filteredJobs.forEach(job => {
-            const jobItem = document.createElement('div');
-            jobItem.classList.add('job-item');
-            jobItem.innerHTML = 
-                <h3>${job.title}</h3>
-                <p>${job.company}</p>
-                <p>${job.location}</p>
-            ;
-            results.appendChild(jobItem);
-        });
-    } else {
-        results.innerHTML = '<p>No jobs found</p>';
-    }
-}
