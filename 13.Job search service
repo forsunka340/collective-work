@@ -1,0 +1,269 @@
+css
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.results-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.job-item h3 {
+    margin: 0;
+    color: #007BFF;
+}
+
+.job-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.content {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forms {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+::placeholder {
+    color: #aaa;
+    font-family: "Lato", sans-serif;
+}
+
+.columns {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+.columns__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.columns__first, .columns__second {
+    max-width: 600px;
+}
+
+.columns__first h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.columns__first p {
+    text-transform: none;
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+}
+
+.app-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    color: #218be2;
+    border-color: #0f1215;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+.app-btn:hover {
+    color: rgb(89, 162, 218);
+    background-color: #fefefe;
+    border: 1px solid rgb(89, 162, 218);
+}
+
+.items {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 2px solid rgb(89, 162, 218);
+    width: 200px;
+    height: 180px;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px rgb(0, 0, 0, 0.25);
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.item p {
+    color: #333;
+    font-size: 14px;
+}
+
+.item:hover {
+    transform: scale(1.25);
+    background-color: #f0f4f8;
+    border-color: #007BFF;
+}
+
+java script
+
+const jobs = [
+    { title: "Software Engineer", company: "Tech Corp", location: "New York, NY" },
+    { title: "Web Developer", company: "Web Solutions", location: "San Francisco, CA" },
+    { title: "Data Scientist", company: "Data Insights", location: "Boston, MA" },
+    // Add more jobs as needed
+];
+
+function searchJobs() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const results = document.getElementById('results');
+    results.innerHTML = '';
+
+    const filteredJobs = jobs.filter(job => 
+        job.title.toLowerCase().includes(searchInput) || 
+        job.company.toLowerCase().includes(searchInput)
+    );
+
+    if (filteredJobs.length > 0) {
+        filteredJobs.forEach(job => {
+            const jobItem = document.createElement('div');
+            jobItem.classList.add('job-item');
+            jobItem.innerHTML = 
+                <h3>${job.title}</h3>
+                <p>${job.company}</p>
+                <p>${job.location}</p>
+            ;
+            results.appendChild(jobItem);
+        });
+    } else {
+        results.innerHTML = '<p>No jobs found</p>';
+    }
+}
